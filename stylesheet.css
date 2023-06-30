@@ -87,12 +87,15 @@ body *{
     transform: translateY(-50%);
     top: 50%;
 
-    left: 0;
+    animation: slide2 0.4s forwards;
 }
 
 .light #switch button{
-    right: 0;
-    left: initial;
+    animation: slide 0.4s forwards;
+}
+
+#switch button:hover{
+    outline: 8px solid var(--cor-hi);
 }
 
 #switch span{
@@ -181,3 +184,20 @@ footer{
     }
 }
 
+@keyframes slide {
+    from{
+        left: 0;
+    }
+    to{
+        left: 50%;
+    }
+}
+
+@keyframes slide2 {
+    from{
+        left: 50%;
+    }
+    to{
+        left: 0;
+    }
+}
