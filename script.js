@@ -1,4 +1,4 @@
-function mudar_raca(){
+function mudar_cor(){
     let agateemeele = document.documentElement
     agateemeele.classList.toggle('light')
 
